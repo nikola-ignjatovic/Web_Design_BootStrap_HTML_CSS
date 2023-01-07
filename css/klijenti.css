@@ -1,0 +1,29 @@
+body {
+  color: white;
+}
+
+#klijentiSection {
+}
+
+#podnaslovKlijent {
+  font-size: 18px;
+  max-width: 750px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+span {
+  color: yellow;
+}
+
+h1 {
+  margin-top: 100px;
+}
+
+.item {
+  padding-bottom: 30px;
+}
+
+.photo-gallery {
+  margin-top: 15px;
+}

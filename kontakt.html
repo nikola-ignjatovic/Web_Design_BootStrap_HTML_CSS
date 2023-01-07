@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Kontakt kompanije Korks">
+    <meta name="keywords"
+        content="Korks, Kokntakt, Kontaktirajte, Kontaktirajte nas, Adresa, Broj telefona, Pitanja, Podrska">
+    <meta name="author" content="Nikola Ignjatovic">
+    <title>
+        Korks Kontakt
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/kontakt.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/Korkslogo.png" alt="Logo Korksa"
+                    style="width:50px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Glavna </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="oNama.html">O nama </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proizvodi.html">Proizvodi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cestaPitanja.html">Cesto postavljena pitanja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galerijaSlika.html">Galerija slika</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="kontakt.html">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mapaSajta.html">Mapa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Section: Contact v.2-->
+    <section class="mb-4">
+
+        <div class="container">
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Kontaktirajte nas</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5">Imate pitanja? <strong>Ne oklevajte da nas kontaktirate
+                    direktno!</strong>
+                Nas tim ce Vam se javiti u najkracem mogucem roku.</p>
+
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <!-- Nema phpa jer ne radimo backend -->
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Vase ime</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Vas E-Mail</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">Naslov</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2"
+                                        class="form-control md-textarea"></textarea>
+                                    <label for="message">Vasa poruka</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                    </form>
+
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary"
+                            onclick="document.getElementById('contact-form').submit();">Posalji</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-pin-map"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
+                                <path fill-rule="evenodd"
+                                    d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                            </svg>
+                            <p>Omladinskih brigada 31, Beograd 11070</p>
+                        </li>
+
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-telephone-inbound"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0zm-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>
+                            <p>+381 64 370 3085</p>
+                        </li>
+
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                            </svg>
+                            <p>nikolart3121@gs.viser.edu.rs</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+            </div>
+        </div>
+    </section>
+    <!--Section: Contact v.2-->
+
+    <section id="mapa">
+        <div class="container">
+            <!--Google map-->
+            <div id="map-container-google-3" class="z-depth-1-half map-container-google-3">
+                <iframe
+                    src="https://maps.google.com/maps?q=omladinskih%20brigada%2031&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" allowfullscreen alt="Mapa lokacije"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+</body>
+
+</html>
